@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-// A header (.h) for each class you expect to need, with a comment saying what the class is responsible for, its member variables, and declarations of its main member functions. No implementations yet.
+// This class handles the game's graphics. So far, I'm expecting to use a 2D array since this is a terminal-based game.
 
 class Graphics {
     private:
@@ -13,7 +13,8 @@ class Graphics {
         array<array<char, v>, w> currentBoard;
         array<array<array<char, x>, y>, z> pieces; // array with all pieces containing a 2d array, chars formed in the shape of a piece
     public:
-
+        // print out the current board
+        void drawBoard();
 };
 
 #endif
