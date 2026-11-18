@@ -2,7 +2,9 @@
 The final project for CIS25: Tetris
 
 Mermaid Diagram:
+<img width="2046" height="1375" alt="Mermaid Diagram" src="https://github.com/user-attachments/assets/86407566-3eff-499f-81e6-7f9a20fc0a95" />
 
+-- Mermaid syntax --
 classDiagram
 
 class Player {
