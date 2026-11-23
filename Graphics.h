@@ -9,12 +9,16 @@ using namespace std;
 
 class Graphics {
     private:
-        // I haven't yet figured out how large I want the game board to be, so I'll just use v,w,x,y,z instead of actual numbers for now.
-        array<array<char, v>, w> currentBoard;
-        array<array<array<char, x>, y>, z> pieces; // array with all pieces containing a 2d array, chars formed in the shape of a piece
+        array<array<string, 52>, 52> canvas;
+        array<array<string, 50>, 50> board;
+
+        // array<array<array<char, x>, y>, z> pieces; // array with all pieces containing a 2d array, chars formed in the shape of a piece
     public:
         // print out the current board
-        void drawBoard();
+        Graphics();
+        void updateCanvas();
+        void drawCanvas();
+        
 };
 
 #endif
